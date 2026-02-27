@@ -1,0 +1,56 @@
+FULL PROJECT INSTALLATION PACKAGES
+
+Backend (Python) - file source: F:\Backend\bda\requirements.txt
+------------------------------------------------------------
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+python-multipart
+passlib[bcrypt]
+pydantic
+python-dotenv
+python-jose[cryptography]
+
+Backend install command
+-----------------------
+cd F:\Backend\bda
+pip install -r requirements.txt
+
+Frontend (Node.js) - file source: F:\Task 3\bda\frontend\package.json
+-----------------------------------------------------------------------
+Runtime dependencies:
+axios@^1.13.5
+react@^19.2.0
+react-dom@^19.2.0
+react-router-dom@^7.13.1
+
+Dev dependencies:
+@eslint/js@^9.39.1
+@tailwindcss/postcss@^4.2.1
+@types/react@^19.2.7
+@types/react-dom@^19.2.3
+@vitejs/plugin-react@^5.1.1
+autoprefixer@^10.4.27
+eslint@^9.39.1
+eslint-plugin-react-hooks@^7.0.1
+eslint-plugin-react-refresh@^0.4.24
+globals@^16.5.0
+postcss@^8.5.6
+tailwindcss@^4.2.1
+vite@^7.3.1
+
+Frontend install command
+------------------------
+cd F:\Task 3\bda\frontend
+npm install
+
+Run commands
+------------
+Backend:
+cd F:\Backend\bda
+uvicorn app.main:app --reload
+
+Frontend:
+cd F:\Task 3\bda\frontend
+npm run dev
